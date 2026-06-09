@@ -14,6 +14,7 @@
      Example: "Student reviews of CS professors at [university] — useful because official
      course descriptions don't reflect teaching style, exam difficulty, or workload." -->
 
+     Student reviews of CS professors at Rutgers University(NB) teach the CS core curriculum: I realized that just having student reviews of cs professors was too broad for me and I had too much information that did not work with the scope of this projects or were outdated. As such, I decided to shorten it to mainly the teachers teaching core classes at my university. The sources I have are about 10 cs professor reviews from RMP and 2 reddit posts on cs professors. These show the professor's teaching style, behavior, class difficulty, and more.
 ---
 
 ## Document Sources
