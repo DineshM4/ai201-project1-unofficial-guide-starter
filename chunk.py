@@ -3,16 +3,6 @@ Milestone 3 — ingestion loader + chunking.
 
 Loads every .txt in documents/ and splits each into overlapping chunks.
 
-Chunking strategy (from planning.md):
-  - approach   : review-aware splitting with a 400-character cap, 50-char overlap
-  - rationale  : the corpus is many short, self-contained student reviews, each
-                 already tagged inline with its professor/course/thread. Splitting
-                 on those review boundaries means one chunk = one review, so a
-                 query never retrieves a chunk that is half one professor and half
-                 another. A single review that runs past 400 chars is the only
-                 case that gets character-split (with 50-char overlap to preserve
-                 context across the cut).
-
 Each document begins with a small header (professor summary stats, or the Reddit
 thread title/URL); that header becomes its own chunk.
 """
@@ -115,7 +105,8 @@ def main() -> None:
     docs = load_documents()
     chunks = chunk_documents(docs)
 
-    CHUNKS_OUT.write_text(json.dumps(chunks, indent=2, ensure_ascii=False), encoding="utf-8")
+    CHUNKS_OUT.write_text(json.dumps(
+        chunks, indent=2, ensure_ascii=False), encoding="utf-8")
 
     # --- Report so the chunking can be verified ---------------------------
     lengths = [len(c["text"]) for c in chunks]
