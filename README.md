@@ -132,15 +132,16 @@ This starts the Gradio interface. Open the local URL printed in the terminal (ty
 
 **System prompt grounding instruction:** The system prompt gives five absolute rules:
 
-     1. Answer ONLY from the provided CONTEXT block
-     2. Never use outside/prior knowledge
-     3. Never invent names/courses/ratings
-     4. Every claim must be supported by a CONTEXT sentence
-     5. if the context is insufficient reply with the exact refusal sentence "I don't have enough information on that." 
+1. Answer ONLY from the provided CONTEXT block
+2. Never use outside/prior knowledge
+3. Never invent names/courses/ratings
+4. Every claim must be supported by a CONTEXT sentence
+5. if the context is insufficient reply with the exact refusal sentence "I don't have enough information on that." 
      
-     I reinforced these rules by `temperature=0`, and to stop calling the LLM when cosine distance goes beyond 0.85 so that off domain questions dont waste the model's power 
+I reinforced these rules by `temperature=0`, and to stop calling the LLM when cosine distance goes beyond 0.85 so that off domain questions dont waste the model's power 
      
 **How source attribution is surfaced in the response:** Sources are built manually from the metadata of the chunks actually fed to the model (`build_sources`), and as such are never parsed from the model's reply, making a citation unable to be hallucinated or omitted.
+
 ---
 
 ## Evaluation Report
