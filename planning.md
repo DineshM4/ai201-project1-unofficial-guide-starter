@@ -41,12 +41,11 @@
      numbers fit the structure of your documents.
      A review-heavy corpus warrants different chunking than a long FAQ. -->
 
-**Chunk size:** 400 characters.
+**Chunk size:** 600-character cap (the longest single review is ~550 chars, so reviews are never split).
 
-**Overlap:** 50 characters.
+**Overlap:** 50 characters (only applied if a single review somehow exceeds the 600-char cap).
 
-**Reasoning:** Since my data is made up of many short, self-contained student reviews(from RMP mainly), a small chunk size keeps each individual review's opinion intact without bleeding into unrelated ones, and a light overlap preserves context for the few reviews that run slightly longer than one chunk.
-
+**Reasoning:** Since my data is made up of many short, self-contained student reviews(from RMP mainly), a small chunk size keeps each individual review's opinion intact without bleeding into unrelated ones, and a light overlap preserves context for the few reviews that run slightly longer than one chunk. I originally planned a 400-character fixed-size window, but after ingestion I measured the real review-length distribution: median 446 characters, max ~550(Got the data from claude doing the analysis).As such, I raised the cap to 600 so every review stays one intact, attributed chunk.
 ---
 
 ## Retrieval Approach

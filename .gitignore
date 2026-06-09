@@ -16,5 +16,8 @@ env/
 chroma_db/
 chroma/
 
+# Generated chunk artifact (regenerate with `python chunk.py`)
+chunks.json
+
 # macOS
 .DS_Store

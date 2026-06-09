@@ -1,0 +1,27 @@
+Source: Reddit r/rutgers — Best CS Professors?
+URL: https://www.reddit.com/r/rutgers/comments/tejyvj/best_cs_professors/
+======================================================================
+
+[Original post]
+I'm going to be taking intro to comp this fall 2022 and I wanted to know for all you CS majors, could you list the best professors and what class you took with them? Preferably for intro to comp and data structures.
+
+[Reddit comment | thread: Best CS professors | score: 3]
+The intro to CS and data structures professors all kinda sucked imo except for centeno but those are common hour classes so you can attend whatever you want and youll be ready for projects and tests (which are all the same for every class). Otherwise, the best professors ive had are Bernstein - CS 344, Boularias - CS 440.
+
+[Reddit comment | thread: Best CS professors | score: 3]
+You can take 214 with Ames, as stated he rocks. Huang teaches 211 sometimes and he's an awesome prof. Wrt CS314 not everyone likes the class but IMO Zhang gave the most interesting and educational projects whereas He Zhu and Menéndez gave projects that were far too much simpler.
+
+[Reddit comment | thread: Best CS professors | score: 1]
+Ames - CS211. Cowan - CS520/440. Chang - CS213/431. Miranda - CS205/336.
+
+[Reddit comment | thread: Best CS professors | score: 0]
+Sesh - very hard but you'll learn a lot, has a great personality. cs205 - Guna - lower level classes he gets lazy but he's a chill prof. cs111 - anyone tbh, all of them are great profs. cs336 - Miranda (hes a good prof, just forgets to teach certain things sometimes). 211 - Menendez (he sucks at teaching but his projects are pretty straightforward).
+
+[Reddit comment | thread: Best CS professors | score: 4]
+Menny ain't easy.
+
+[Reddit comment | thread: Best CS professors | score: 0]
+never said he was, projects were ight tho.
+
+[Reddit comment | thread: Best CS professors | score: 4]
+GOAT for 211 is Huang and I doubt it's close.
