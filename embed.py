@@ -24,7 +24,7 @@ from sentence_transformers import SentenceTransformer
 HERE = Path(__file__).parent
 CHUNKS_IN = HERE / "chunks.json"
 CHROMA_DIR = HERE / "chroma_db"          # persisted on disk; gitignored
-COLLECTION_NAME = "CS professor_reviews"
+COLLECTION_NAME = "professor_reviews"  # ChromaDB names can't contain spaces
 MODEL_NAME = "all-MiniLM-L6-v2"          # planning.md Retrieval Approach
 
 
